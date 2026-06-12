@@ -1,4 +1,3 @@
-/* --- Aturan Dasar & Tipografi --- */
 body {
     font-family: 'Poppins', sans-serif;
     background-color: #f8f9fa;
@@ -7,7 +6,7 @@ body {
     overflow-x: hidden; /* Mencegah layar bisa digeser ke kanan-kiri di HP */
 }
 
-/* --- Sidebar Navigasi Kiri (Desktop) --- */
+
 .sidebar {
     position: fixed;
     top: 0;
@@ -42,13 +41,12 @@ body {
     color: white;
 }
 
-/* --- Pembatas Konten Utama --- */
+
 .main-content {
     margin-left: 80px;
     padding: 40px;
 }
 
-/* --- Hero Section --- */
 .hero-section {
     min-height: 100vh;
     display: flex;
@@ -62,7 +60,7 @@ body {
     color: #212529;
 }
 
-/* Efek Kursor Berkedip */
+
 .typing-text {
     font-size: 1.8rem;
     color: #0d6efd;
@@ -72,7 +70,6 @@ body {
     animation: blink 0.75s step-end infinite;
 }
 
-/* Media Sosial */
 .social-icons a {
     color: #0d6efd;
     font-size: 1.5rem;
@@ -86,7 +83,7 @@ body {
     transform: translateY(-3px);
 }
 
-/* Frame Foto Profil (Desktop) --- */
+
 .profile-img-box img {
     max-width: 100%;
     max-height: 70vh;
@@ -95,7 +92,7 @@ body {
     box-shadow: 0 10px 30px rgba(0,0,0,0.1);
 }
 
-/* --- Komponen Linimasa (Timeline) --- */
+
 .timeline {
     position: relative;
     border-left: 3px solid #0d6efd;
@@ -125,9 +122,9 @@ body {
     50% { border-color: #0d6efd; }
 }
 
-/* --- MEDIA QUERIES (SANGAT PENTING UNTUK MODE PORTRAIT HP) --- */
+
 @media (max-width: 768px) {
-    /* Pindahkan menu navigasi dari samping ke bawah layar HP */
+    
     .sidebar {
         width: 100% !important;
         height: 60px !important;
@@ -147,14 +144,14 @@ body {
         height: 45px !important;
     }
     
-    /* Hilangkan margin kiri pada konten utama agar teks bergeser penuh ke kiri layar */
+    
     .main-content {
         margin-left: 0 !important;
         margin-bottom: 80px !important; /* Jarak aman agar konten bawah tidak tertutup menu */
         padding: 20px !important;
     }
     
-    /* Atur ulang posisi hero agar foto pindah ke atas dan teks ke bawah (Vertikal) */
+    
     .hero-section {
         min-height: calc(100vh - 60px) !important;
         padding-top: 30px !important;
@@ -167,14 +164,14 @@ body {
         align-items: center !important;
     }
 
-    /* Memaksa pembagian kolom Bootstrap menjadi penuh ke bawah */
+    
     .hero-section .col-md-7, 
     .hero-section .col-md-5 {
         width: 100% !important;
         text-align: center !important;
     }
     
-    /* Ukuran teks disesuaikan dengan layar HP */
+    
     .hero-title {
         font-size: 2.2rem !important;
         margin-top: 15px !important;
@@ -194,16 +191,16 @@ body {
         margin-right: 0 !important;
     }
     
-    /* Atur foto profil agar berada di tengah atas, tidak gepeng, dan pas di layar HP */
+    
     .profile-img-box {
-        display: block !important; /* Memastikan gambar tetap muncul di HP */
+        display: block !important; 
         margin-bottom: 20px !important;
     }
 
     .profile-img-box img {
-        max-width: 220px !important; /* Batasi lebar maksimal foto di HP */
-        height: 220px !important; /* Buat foto menjadi persegi estetik */
-        border-radius: 50% !important; /* Mengubah foto menjadi bulat rapi di HP */
+        max-width: 220px !important; 
+        height: 220px !important; 
+        border-radius: 50% !important; 
         object-fit: cover !important;
     }
 }
