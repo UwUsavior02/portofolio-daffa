@@ -3,7 +3,9 @@ body {
     background-color: #f8f9fa;
     color: #333;
     scroll-behavior: smooth;
+    overflow-x: hidden;
 }
+
 
 .sidebar {
     position: fixed;
@@ -39,17 +41,17 @@ body {
     color: white;
 }
 
+
 .main-content {
     margin-left: 80px;
     padding: 40px;
 }
 
+
 .hero-section {
-    min-height: 100vh; 
+    min-height: 100vh;
     display: flex;
     align-items: center;
-    padding-top: 20px;
-    padding-bottom: 20px;
 }
 
 .hero-title {
@@ -57,8 +59,8 @@ body {
     font-weight: 700;
     text-transform: uppercase;
     color: #212529;
-    letter-spacing: -1px;
 }
+
 
 .typing-text {
     font-size: 1.8rem;
@@ -69,28 +71,30 @@ body {
     animation: blink 0.75s step-end infinite;
 }
 
+
 .social-icons a {
-    color: #0d6efd; 
+    color: #0d6efd;
     font-size: 1.5rem;
-    margin-right: 20px; 
+    margin-right: 20px;
     display: inline-block;
     transition: transform 0.2s, color 0.2s;
 }
 
 .social-icons a:hover {
     color: #0a58ca;
-    transform: translateY(-3px); 
+    transform: translateY(-3px);
 }
+
 
 .profile-img-box img {
     max-width: 100%;
-    max-height: 80vh;
-    object-fit: cover; 
+    max-height: 70vh;
+    object-fit: cover;
     border-radius: 20px;
-    box-shadow: 0 10px 30px rgba(0,0,0,0.1); /* Memberi bayangan estetik di belakang foto */
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
 }
 
-
+/* --- Komponen Linimasa (Timeline) --- */
 .timeline {
     position: relative;
     border-left: 3px solid #0d6efd;
@@ -114,10 +118,12 @@ body {
     height: 14px;
 }
 
+
 @keyframes blink {
     from, to { border-color: transparent }
     50% { border-color: #0d6efd; }
 }
+
 
 @media (max-width: 768px) {
     .sidebar {
@@ -146,11 +152,15 @@ body {
     }
     
     .typing-text {
-        font-size: 1.2rem;
+        font-size: 1.1rem;
     }
 
     .hero-section {
         min-height: auto;
         padding-top: 40px;
+    }
+
+    .profile-img-box img {
+        max-height: 40vh;
     }
 }
